@@ -204,7 +204,17 @@
 }
 
 .string {
-    color: @green;
+    color: desaturate( @green, 20% );
+
+    &.regexp {
+        &, .begin, .end {
+            color: @teal;
+        }
+    }
+
+    &.other.link {
+        color: @teal;
+    }
 }
 
 .support {
