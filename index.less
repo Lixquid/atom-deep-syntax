@@ -158,6 +158,7 @@
 
     &.name.function,
     &.name.class,
+    &.name.type,
     &.name.section {
         color: lighten( @blue, 20% );
     }
@@ -176,7 +177,7 @@
 
     &.operator,
     &.other.unit {
-        color: @orange;
+        color: mix( @orange, @background-color, 60% );
     }
 }
 
