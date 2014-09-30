@@ -262,3 +262,58 @@
 .none {
     color: @text-color;
 }
+
+/* Markup/down styling ****************************************************************************/
+
+.markup, .gfm {
+
+    // Style
+    &.bold {
+        color: @teal;
+        font-weight: bold;
+    }
+    &.italic {
+        color: @teal;
+        font-style: italic;
+    }
+    &.strike {
+        color: @teal;
+        text-decoration: line-through;
+    }
+
+    // Constructs
+    &.list {
+        color: @red;
+    }
+    &.quote {
+        color: @red;
+
+        &.comment {
+            color: darken( @text-color, 30% );
+        }
+    }
+    &.hr {
+        text-decoration: line-through;
+    }
+
+    // Headings
+    &.heading-1 {
+        color: mix( @blue, @text-color, 100% );
+    }
+    &.heading-2 {
+        color: mix( @blue, @text-color, 85% );
+    }
+    &.heading-3 {
+        color: mix( @blue, @text-color, 70% );
+    }
+    &.heading-4 {
+        color: mix( @blue, @text-color, 55% );
+    }
+    &.heading-5 {
+        color: mix( @blue, @text-color, 40% );
+    }
+    &.heading-6 {
+        color: mix( @blue, @text-color, 25% );
+    }
+
+}
