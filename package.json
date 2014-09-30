@@ -1,0 +1,13 @@
+{
+    "name": "deep-syntax",
+    "version": "0.0.0",
+
+    "author": "Lixquid",
+    "repository": "https://github.com/Lixquid/atom-deep-syntax",
+    "license": "GNU GPL v3",
+
+    "theme": "syntax",
+    "engines": {
+        "atom": ">0.50.0"
+    }
+}
