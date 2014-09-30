@@ -218,7 +218,25 @@
 }
 
 .support {
-    color: @orange;
+    color: mix( @orange, @text-color );
+
+    &.class {
+        color: @orange;
+    }
+
+    &.function {
+        color: @teal;
+
+        &.library {
+            color: darken( @blue, 15% );
+        }
+    }
+}
+
+.meta {
+    &.tag {
+        color: mix( @red, @text-color, 70% );
+    }
 }
 
 .none {
