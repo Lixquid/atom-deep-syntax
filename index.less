@@ -186,10 +186,21 @@
 
 .constant {
     color: @orange;
+
+    &.character.escape {
+        color: @yellow;
+    }
+    &.other.symbol {
+        color: @teal;
+    }
 }
 
 .variable {
     color: @red;
+
+    &.parameter.function {
+        color: mix( @text-color, @red );
+    }
 }
 
 .string {
