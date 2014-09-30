@@ -64,6 +64,16 @@
         background: lighten( @background-color, 5% );
     }
 
+    .fold-marker::after {
+        color: darken( @text-color, 40% );
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: all 100ms / @animation-speed;
+    }
+    .fold-marker:hover::after {
+        color: @text-color;
+    }
+
     // Invisibles
 
     .indent-guide, .invisible-character {
