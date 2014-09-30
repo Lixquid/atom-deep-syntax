@@ -50,8 +50,8 @@
     }
 
     .cursor-line {
-        background: darken( @background-color, 2% );
-        box-shadow: 2px 0 0 1px darken( @background-color, 3% ) inset;
+        background: rgba( 0, 0, 0, 0.2 );
+        box-shadow: 2px 0 0 1px rgba( 0, 0, 0, 0.2 ) inset;
     }
 
     .selection .region {
@@ -139,4 +139,48 @@
     border: none;
     border-radius: 2px;
     box-shadow: 0 0 6px rgba( 255, 255, 255, 0.3 );
+}
+
+/* Syntax Styling *********************************************************************************/
+
+.comment {
+    color: darken( @text-color, 40% );
+
+    text-shadow: 0 0 .2px darken( @text-color, 30% );
+
+    .invisible-character {
+        text-shadow: none;
+    }
+}
+
+.entity {
+    color: @blue;
+}
+
+.keyword {
+    color: @blue;
+}
+
+.storage {
+    color: @blue;
+}
+
+.constant {
+    color: @orange;
+}
+
+.variable {
+    color: @red;
+}
+
+.string {
+    color: @green;
+}
+
+.support {
+    color: @orange;
+}
+
+.none {
+    color: @text-color;
 }
