@@ -59,10 +59,13 @@
         background-color: darken( @background-color, 2% );
         border-right: 1px solid lighten( @background-color, 5% );
 
+        .line-numbers {
+        box-shadow: -22px 0 20px -20px rgba( 0, 0, 0, .4 ) inset;
+        }
+
         .line-number {
             color: darken( @text-color, 30% );
             opacity: 1;
-            box-shadow: -22px 0 20px -20px rgba( 0, 0, 0, .4 ) inset;
             transition: all 50ms / @animation-speed;
 
             &.cursor-line {
