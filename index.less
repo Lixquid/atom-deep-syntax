@@ -52,4 +52,40 @@
         color: @text-color;
     }
 
+    // Gutter
+
+    .gutter {
+        margin-right: 10px;
+        background-color: darken( @background-color, 2% );
+        border-right: 1px solid lighten( @background-color, 5% );
+
+        .line-number {
+            color: darken( @text-color, 30% );
+            opacity: 1;
+            box-shadow: -22px 0 20px -20px rgba( 0, 0, 0, .4 ) inset;
+            transition: all 50ms / @animation-speed;
+
+            &.cursor-line {
+                background-color: darken( @background-color, 4% );
+                color: @text-color;
+                text-shadow: 0 0 1px @text-color;
+            }
+
+            &.folded {
+                border-bottom: 1px solid lighten( @background-color, 7% );
+            }
+
+            .icon-right {
+                color: darken( @text-color, 40% );
+                text-shadow: none;
+                transition: all 50ms / @animation-speed;
+
+                &:hover {
+                    color: darken( @text-color, 20% );
+                    text-shadow: 0 0 1px darken( @text-color, 20% );
+                }
+            }
+        }
+    }
+
 }
