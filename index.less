@@ -41,4 +41,15 @@
 .editor {
     background-color: @background-color;
     color: @text-color;
+
+    // Invisibles
+
+    .indent-guide, .invisible-character {
+        color: lighten( @background-color, 5% );
+    }
+
+    .invisible {
+        color: @text-color;
+    }
+
 }
