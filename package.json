@@ -2,8 +2,9 @@
     "name": "deep-syntax",
     "version": "0.0.0",
 
+    "description": "A subtle, muted syntax colour scheme for Atom.",
     "author": "Lixquid",
-    "repository": "https://github.com/Lixquid/atom-deep-syntax",
+    "repository": "https://github.com/Lixquid/deep-syntax",
     "license": "GNU GPL v3",
 
     "theme": "syntax",
