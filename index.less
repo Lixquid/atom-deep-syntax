@@ -155,10 +155,29 @@
 
 .entity {
     color: @blue;
+
+    &.name.function,
+    &.name.class,
+    &.name.section {
+        color: lighten( @blue, 20% );
+    }
+
+    &.other.attribute-name {
+        color: mix( @teal, @blue );
+
+        &.id {
+            color: @blue;
+        }
+    }
 }
 
 .keyword {
     color: @blue;
+
+    &.operator,
+    &.other.unit {
+        color: @orange;
+    }
 }
 
 .storage {
