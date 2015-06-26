@@ -33,12 +33,7 @@
 
 /* Editor Styling *********************************************************************************/
 
-.editor-colors {
-    background-color: @background-color;
-    color: @text-color;
-}
-
-.editor {
+.atom-text-editor, :host {
     background-color: @background-color;
     color: @text-color;
 
@@ -146,7 +141,7 @@
 
 }
 
-.bracket-matcher {
+.bracket-matcher .region {
     background: rgba( 255, 255, 255, 0.2 );
     border: none;
     border-radius: 2px;
